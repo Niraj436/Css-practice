@@ -28,7 +28,7 @@ const Header = () => {
           <button onClick={()=>setOpen(!open)} className='absolute z-30 top-10 right-10 text-4xl lg:hidden block'><IoMdClose/></button>
         )
       }
-       <header className={`flex lg:flex-row lg:gap-y-0 gap-y-10 lg:h-auto h-[100vh]  flex-col lg:justify-between items-center py-4 px-8 lg:bg-mainColor bg-white lg:relative lg:w-auto w-[100vw] ${open ? "custom-header" : "left-0 duration-100"}`}>
+       <header className={`flex lg:flex-row lg:gap-y-0 gap-y-10 lg:h-auto h-[100vh]  flex-col lg:justify-between items-center py-4 px-8 lg:bg-mainColor bg-white lg:relative absolute lg:w-auto w-[100vw] ${open ? "custom-header" : "left-0 duration-100"}`}>
          <div> 
           <h1 className='text-3xl tracking-widest text-blue-950 font-normal'>MetaLogic</h1>
          </div>
