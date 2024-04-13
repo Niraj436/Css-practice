@@ -5,10 +5,13 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { IoMenu } from "react-icons/io5"
 import { IoMdClose } from "react-icons/io";
+import logo from "@/images/logo.png"
+import Image from 'next/image';
 
 const Header = () => {
   const pathname = usePathname();
   const [open , setOpen] = useState(false)
+ 
   const navLinks = [
     {name: "Home", href: "/",},
     { name: "Services", href: "/services",},
@@ -18,7 +21,8 @@ const Header = () => {
   ];
   console.log(open)
   return (
-    <div className=' sticky top-0 border'>
+    <div className=' sticky top-0 z-50 border-[1px]'>
+      
       {
         open ? (
 
@@ -28,9 +32,11 @@ const Header = () => {
           <button onClick={()=>setOpen(!open)} className='absolute z-30 top-10 right-10 text-4xl lg:hidden block'><IoMdClose/></button>
         )
       }
-       <header className={`flex lg:flex-row lg:gap-y-0 gap-y-10 lg:h-auto h-[100vh]  flex-col lg:justify-between items-center py-4 px-8 lg:bg-mainColor bg-white lg:relative absolute lg:w-auto w-[100vw] ${open ? "custom-header" : "left-0 duration-100"}`}>
-         <div> 
-          <h1 className='text-3xl tracking-widest text-blue-950 font-normal'>MetaLogic</h1>
+      
+       <header className={`flex  lg:flex-row lg:gap-y-0 gap-y-10 lg:h-auto h-[100vh]  flex-col lg:justify-between items-center py-3 px-8 lg:bg-mainColor bg-white lg:relative absolute lg:left-0  lg:w-auto w-[100vw] ${!open ? "left-0 duration-100 block" : "-left-full"}`}>
+         <div className='flex justify-center items-center gap-2'> 
+          <Image src={logo} className='size-14'/>
+          <h1 className='text-3xl tracking-widest text-blue-950 font-semibold'>MetaLogic</h1>
          </div>
 
          <nav className=''>
@@ -58,6 +64,8 @@ const Header = () => {
          </div>
        </header>
        </div>
+       
+    
   )
 }
 
