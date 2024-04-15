@@ -17,7 +17,7 @@ const Cares = () => {
        transition={{ duration: 0.5}} 
       >
         <h1 className='text-blue-950 text-3xl font-semibold'>Metalogic Cares For You</h1>
-        <p className='text-sm text-gray-500'>We're less about valuing perks and more about valuing people. Our employee benefits are built around enhancing your wellbeing - at work and at home</p>
+        <p className='text-sm text-gray-500'>We&apos;re less about valuing perks and more about valuing people. Our employee benefits are built around enhancing your wellbeing - at work and at home</p>
       </motion.div>
       <motion.div className='grid lg:grid-cols-3 grid-cols-1 gap-2'
        initial={{ opacity:0, y:"50px" }}

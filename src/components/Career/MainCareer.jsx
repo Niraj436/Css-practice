@@ -19,7 +19,7 @@ const MainCareer = () => {
             </p>
           </div>
           <p className="w-64 text-center ">
-            We're continiously searching for the right talent. Check if you're a
+            We&apos;re continiously searching for the right talent. Check if you&apos;re a
             good match.
           </p>
           <button className="block px-8 rounded-md py-2.5 bg-blue-950 text-white text-sm">

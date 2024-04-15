@@ -8,16 +8,16 @@ const Footer = () => {
       <div className=" flex flex-col gap-y-2">
         <div className="flex items-center gap-x-1">
         <Image src={logo} alt="logo" className="size-8"/>
-        <h1 className="text-3xl">MetaLogic</h1>
+        <p className="text-3xl">MetaLogic</p>
         </div>
-        <h1 className="text-sm">Software Private Limited</h1>
+        <p className="text-sm">Software Private Limited</p>
         <p className="text-sm">Saptakhel, Lalitpur (Head office)</p>
         <p className="text-sm">+ 977 9851353599</p>
         <p className="text-sm">info@metalogic.com.np</p>
       </div>
 
       <div className="flex flex-col gap-y-2">
-        <h1 children="text-xl">Company</h1>
+        <p children="text-xl">Company</p>
         <a className="text-xs" href="">
           Feedback
         </a>
@@ -29,7 +29,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex flex-col gap-y-2">
-        <h1 children="text-xl">Services</h1>
+        <p children="text-xl">Services</p>
         <a className="text-xs" href="">
           Custom Software Development
         </a>
@@ -62,7 +62,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex flex-col gap-y-2">
-        <h1 children="text-xl">Join</h1>
+        <p children="text-xl">Join</p>
         <a className="text-xs" href="">
           Careers at MetaLogic
         </a>
@@ -71,7 +71,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex flex-col  gap-y-2">
-        <h1 children="text-xl">Join us on Social Medias</h1>
+        <p children="text-xl">Join us on Social Medias</p>
         <div>
           <a className="text-xs" href="">
             Careers at MetaLogic
