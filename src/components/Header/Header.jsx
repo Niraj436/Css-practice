@@ -49,22 +49,24 @@ const Header = () => {
          <nav className=''>
            <ul className='flex  lg:flex-row flex-col lg:gap-x-4 lg:gap-y-0 gap-y-8  text-sm font-semibold'>
            {
-              navLinks.map((link,index,i)=>{
+              navLinks.map((link,index)=>{
                 const isActive = (pathname === link.href) || (pathname.startsWith(link.href) && link.href !== '/')
                 return (
-                  <>
-                 <>
-                  <li className='lg:block hidden px-4' key={index}>
-                  <Link className={` py-1 ${isActive && "border-b-4 border-b-red-500"}`} href={link.href} key={link.name}>{link.name}</Link>
+                  
+                <div key={index}>
+                  <li className='lg:block hidden px-4'>
+                  <Link href={link.href} >
+                    <p className={` py-1 ${isActive && "border-b-4 border-b-red-500"}`} >{link.name}</p>
+                  </Link>
                   </li>
-                  </>
-
-                  <>
+                 
                   <li className='lg:hidden block' onClick={()=>setOpen(!open)}>
-                  <Link className={` py-1 ${isActive && "border-b-4 border-b-red-500"}`} href={link.href} key={link.name}>{link.name}</Link>
+                  <Link  href={link.href}>
+                    <p className={` py-1 ${isActive && "border-b-4 border-b-red-500"}`}>{link.name}</p>
+                  </Link>
                   </li>
-                  </>
-                  </>
+                  </div>
+              
                 )
               })
               }
