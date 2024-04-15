@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col gap-y-2">
-        <p children="text-xl">Company</p>
+        <p className="text-xl">Company</p>
         <a className="text-xs" href="">
           Feedback
         </a>
@@ -29,7 +29,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex flex-col gap-y-2">
-        <p children="text-xl">Services</p>
+        <p className="text-xl">Services</p>
         <a className="text-xs" href="">
           Custom Software Development
         </a>
@@ -62,7 +62,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex flex-col gap-y-2">
-        <p children="text-xl">Join</p>
+        <p className="text-xl">Join</p>
         <a className="text-xs" href="">
           Careers at MetaLogic
         </a>
@@ -71,7 +71,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex flex-col  gap-y-2">
-        <p children="text-xl">Join us on Social Medias</p>
+        <p className="text-xl">Join us on Social Medias</p>
         <div>
           <a className="text-xs" href="">
             Careers at MetaLogic

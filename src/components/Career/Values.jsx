@@ -37,8 +37,8 @@ const Values = () => {
           </div>
           <p className="text-lg font-bold text-blue-950">Continious Learning</p>
           <p className="text-sm">
-            We invest in our team&apos; growth through ongoing training, mentorship,
-            and opportunities to expand your skill set. We're dedicated to your
+            We invest in our team&apos;s growth through ongoing training, mentorship,
+            and opportunities to expand your skill set. We&apos;re dedicated to your
             professional development journey.
           </p>
         </div>
@@ -61,7 +61,7 @@ const Values = () => {
           </div>
           <p className="text-lg font-bold text-blue-950">Innovation</p>
           <p className="text-sm">
-          Whether it&apos; the quality of our work, the impact we make, or the relationships we build, we consistently strive for the highest standards.
+          Whether it&apos;ss the quality of our work, the impact we make, or the relationships we build, we consistently strive for the highest standards.
           </p>
         </div>
         <div className="card transition ease-in-out duration-500 flex justify-start flex-col gap-3  p-8 border-2  bg-white shadow-2xl rounded-2xl group h-72">
@@ -83,7 +83,7 @@ const Values = () => {
           </div>
           <p className="text-lg font-bold text-blue-950">Tangible Impact Impact</p>
           <p className="text-sm">
-          We're committed to delivering solutions that not only meet but exceed their expectations.
+          We&apos;re committed to delivering solutions that not only meet but exceed their expectations.
           </p>
         </div>
         <div className="card transition ease-in-out duration-500 flex justify-start flex-col gap-3  p-8 border-2  bg-white shadow-2xl rounded-2xl group h-72">
