@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-y-6 px-20 py-16 bg-[#001c48] text-white">
       <div className=" flex flex-col gap-y-2">
         <div className="flex items-center gap-x-1">
-        <Image src={logo} className="size-8"/>
+        <Image src={logo} alt="logo" className="size-8"/>
         <h1 className="text-3xl">MetaLogic</h1>
         </div>
         <h1 className="text-sm">Software Private Limited</h1>

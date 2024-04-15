@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { PiPersonSimpleRunFill } from "react-icons/pi"
 import { FaChartLine } from "react-icons/fa6";
@@ -6,16 +7,25 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import { TbAtom2 } from "react-icons/tb";
 import { GiStarsStack } from "react-icons/gi";
 import { BsPersonLinesFill } from "react-icons/bs"
+import {motion} from "framer-motion"
 const Benifits = () => {
   return (
     <div className="  bg-white py-12 text-gray-600 font-medium">
-      <div className="text-center">
+      <motion.div className="text-center"
+       initial={{ opacity:0, y:"50px" }}
+       whileInView={{ opacity:1, y:0}}
+       transition={{ duration: 0.5}} 
+      >
         <p className="text-red-500 text-xl font-semibold">Benifits</p>
         <p className="text-indigo-950 font-extrabold text-4xl py-4">
         Life At MetaLogic
         </p>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3  xl:grid-cols-4   gap-4 lg:px-36 md:px-20 px-6 text-sm  ">
+      </motion.div>
+      <motion.div className="grid grid-cols-1 lg:grid-cols-3  xl:grid-cols-4   gap-4 lg:px-36 md:px-20 px-6 text-sm  "
+       initial={{ opacity:0, y:"50px" }}
+       whileInView={{ opacity:1, y:0}}
+       transition={{ duration: 0.5}} 
+      >
         <div className=" card flex justify-start flex-col gap-3  p-8 hover:border-2  bg-white hover:shadow-md rounded-2xl group h-auto ">
           <div>
             <p className="text-4xl bg-[#f3f4f6] w-16 py-3 px-5 rounded-lg flex justify-center text-red-600">
@@ -111,7 +121,7 @@ const Benifits = () => {
           </p>
         </div>
         
-      </div>
+      </motion.div>
     </div>
   )
 }

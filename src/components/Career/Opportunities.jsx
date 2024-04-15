@@ -1,9 +1,15 @@
+"use client"
 import React from 'react'
 import { FaSearch } from "react-icons/fa";
+import {motion} from "framer-motion"
 
 const Opportunities = () => {
   return (
-    <div className='flex flex-col justify-center items-center gap-4 py-40'>
+    <motion.div className='flex flex-col justify-center items-center gap-4 py-40'
+     initial={{ opacity:0, y:"50px" }}
+       whileInView={{ opacity:1, y:0}}
+       transition={{ duration: 0.5}} 
+    >
       <p className='text-xl font-semibold text-yellow-400 text-center'>Opportunities</p>
       <p className='text-4xl font-bold text-blue-950 text-center'>Available Vacancies</p>
       <form className=''>
@@ -21,7 +27,7 @@ const Opportunities = () => {
           </button>
         </div>
       </form>
-    </div>
+    </motion.div>
   )
 }
 
